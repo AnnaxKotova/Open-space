@@ -1,0 +1,87 @@
+.space{
+    background-image: url("img/space.png");
+    width: 100%;
+}
+
+.planet-area{
+    width: 50%;
+}
+
+.planet{
+    width: 650px;
+}
+
+.rocket{
+    transform: rotate(35deg);
+    width: 250px;
+    position: relative;
+    top: 400px;
+    left: 300px;
+}
+
+.control-panel{
+    width: 350px;
+    background: repeating-linear-gradient(to top right, yellow, yellow 10px, black 10px, black 20px);
+    position: absolute;
+    top: 520px;
+    right: 150px;
+    padding: 1%;
+    text-align: center;
+}
+
+.control-panel__inner{
+    background-color: darkslategray;
+    padding: 7%;
+}
+
+.check-buttons{
+    margin-block: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+input[type="checkbox"]{
+    margin-inline: 5%;
+}
+
+
+.levers{
+    display: flex;
+    width: 430px;
+}
+
+input[type="range"]{
+    transform: rotate(-90deg);
+    margin-inline: -8%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+.okay{
+    background-color: yellow;
+    outline:none;
+    border: black solid 1px;
+    padding: 1%;
+    border-radius: 15px;
+}
+
+.launch{
+    background-color: red;
+    outline:none;
+    border: yellow solid 1px;
+    padding: 3%;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+input[type="password"]{
+    color: gray;
+    background-color: yellow;
+    outline:none;
+    border: black solid 1px;
+}
+
+/*Voici j'ai mis important car sinon le CSS prend input[type="password"] en priorité*/
+.error{
+    background-color: red !important;
+}
